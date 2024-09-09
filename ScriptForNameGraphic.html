@@ -1,0 +1,16 @@
+<script>
+  const name = "Devan Desai";
+  let index = 0;
+  const typingSpeed = 15000; // Speed of typing (in milliseconds)
+
+  function typeName() {
+    if (index < name.length) {
+      document.getElementById("typing-name").textContent += name.charAt(index);
+      index++;
+      setTimeout(typeName, typingSpeed);
+    }
+  }
+
+  window.onload = typeName;
+</script>
+
