@@ -249,3 +249,24 @@ ul li a:hover {
 .image img:hover {
   box-shadow: 0 0 15px 5px rgba(0, 90, 156, 0.7); /* Blue glow effect with #005a9c */
 }
+
+/* Fixs banner overlap */
+nav {
+  position: fixed; /* Keeps the nav at the top of the page */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* Ensure visibility */
+  z-index: 1000; /* Keeps nav on top */
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a shadow for better separation */
+}
+
+body {
+  margin: 0;
+  padding-top: 80px; /* Add space for the fixed nav (adjust based on nav height) */
+}
+
+.section__container {
+  padding: 2rem;
+}
