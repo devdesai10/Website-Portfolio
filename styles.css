@@ -176,6 +176,8 @@ ul li a:hover {
 .image img {
   width: min(25rem, 90%);
   border-radius: 100%;
+  position: fixed;
+  z-index: 1000;
 }
 
 @media (width < 750px) {
@@ -270,3 +272,5 @@ body {
 .section__container {
   padding: 2rem;
 }
+
+
